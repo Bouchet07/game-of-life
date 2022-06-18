@@ -1,4 +1,4 @@
-# Game of life
+# Conway's Game of Life
 
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician [John Horton Conway](https://en.wikipedia.org/wiki/John_Horton_Conway) in 1970.
 It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.
@@ -19,3 +19,13 @@ These rules, which compare the behavior of the automaton to real life, can be co
 > 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
 The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed, live or dead; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations.
+
+## Installation
+Go to the project folder and install the requirements
+```
+pip install -r requirements.txt
+```
+Then, you can run it with:
+```
+python src/main.py
+```
