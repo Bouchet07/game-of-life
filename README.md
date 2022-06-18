@@ -29,3 +29,13 @@ Then, you can run it with:
 ```
 python src/main.py
 ```
+
+## Tutorial
+Click:
+1. Right click to place objects
+
+Pess:
+1. **Space** to stop and resume the game
+2. **G** to place gliders
+3. **R** to rotate the object
+4. **S** to show/hide the object to place
