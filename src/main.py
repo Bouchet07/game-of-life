@@ -2,15 +2,25 @@ import numpy as np
 from scipy.ndimage import convolve
 import pygame
 from sys import exit
+import sys
+
 
 # Constants
-# WIDTH, HEIGHT = 1200, 800
-WIDTH, HEIGHT = 1600, 1000
-# RECTSIZE = (10, 10) 
-RECTSIZE = (2, 2) 
+if len(sys.argv) == 5:
+    WIDTH = int(sys.argv[1])
+    HEIGHT = int(sys.argv[2])
+    MODE = int(sys.argv[3])
+    RECTSIZE = (int(sys.argv[4]), int(sys.argv[4])) 
+elif len(sys.argv) != 1:
+    print("Usage: python main.py <width> <height> <mode> <size>")
+    sys.exit(1)
+else:
+    WIDTH, HEIGHT = 1600, 1000
+    MODE = 1 #index of MODES
+    RECTSIZE = (2, 2) 
+
 FPS = 10
 MODES = ['wrap', 'constant']
-MODE = 1 #index of MODES
 
 # Colors
 WHITE = (220, 220, 220)
